@@ -15,7 +15,7 @@
 
     <script src="index.js"></script>
   </head>
-  <body>
+  <div>
     <div id="front">
       <div class="contents">
         <div class="hpbd">
@@ -26,52 +26,218 @@
         <div class="date">
           <div class="month">JAN</div>
           <div class="day">25</div>
+          <!-- <img src="circle.svg" alt="" class="circle" /> -->
         </div>
         <img src="birthday-cake-svgrepo-com.svg" alt="" class="cake" />
+        <footer>
+          <div class="footer-column" >
+            <button class="btn--back" style="opacity: 0;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="footer-column">
+            <p>1/4</p>
+          </div>
+          <div class="footer-column">
+            <button onclick="open_card()" class="btn--next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </footer>
       </div>
-      <button onclick="close_card()" class="btn--back">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"
-          />
-        </svg>
-      </button>
-      <button onclick="open_card()" class="btn--next">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-          />
-        </svg>
-      </button>
     </div>
     <div id="inside">
-      <div class="contents">
-        <img
-          id="inside-pic"
-          src="http://www.freeiconspng.com/uploads/multimedia-photo-icon-31.png"
-        />
-        <p id="message"></p>
-        <p class="author">by Chi Hao Tai</p>
-        <button onclick="close_card()">Click to close</button>
+      <div class="paper">
+        <div class="content">
+          <p>Chúc mừng sinh nhật 18 tuổi my fen.</p>
+          <p>Tuổi mới vui vẻ, luôn dễ thương xinh đẹp.</p>
+          <p>Đừng phũ tui quá, thương bà lắm đó!</p>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-column">
+          <button onclick="close_card()" class="btn--back">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="footer-column">
+          <p>2/4</p>
+        </div>
+        <div class="footer-column">
+          <button onclick="open_card2()" class="btn--next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </footer>
+    </div>
+    <div id="instruct1">
+        <div class="instruct instruct--1">
+          <div class="step">
+            <h2>01</h2>
+            <p>Mở <strong>Tùy chọn hệ thống</strong></p>
+            <img src="step1.1.png" alt="" />
+          </div>
+          <div class="step">
+            <div class="line2--1">
+              <h2>02</h2>
+              <p>Chọn <strong>bluetooth</strong></p>
+              <img src="step1.2.png" alt="" class="squareImg" />
+            </div>
+            <div class="line2--2"></div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer-column">
+            <button onclick="close_card2()" class="btn--back">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="footer-column">
+            <p>3/4</p>
+          </div>
+          <div class="footer-column">
+            <button onclick="open_card3()" class="btn--next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </footer>
       </div>
     </div>
+    <div id="instruct2">
+        <div class="instruct instruct--1">
+          <div class="step">
+            <h2>03</h2>
+            <p>Mở chuột và nhấn vào nút cho tới khi đèn sáng liên tục</p>
+            <img src="step1.1.png" alt="" />
+          </div>
+          <div class="step">
+            <div class="line2--1">
+              <h2>04</h2>
+              <p>Chọn <strong>bluetooth</strong></p>
+              <img src="step1.2.png" alt="" class="squareImg" />
+            </div>
+            <div class="line2--2"></div>
+          </div>
+        </div>
+        <footer>
+          <div class="footer-column">
+            <button onclick="close_card3()" class="btn--back">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="footer-column">
+            <p>4/4</p>
+          </div>
+          <div class="footer-column">
+            <button onclick="open_card2()" class="btn--next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </footer>
+      </div>
   </body>
 </html>
