@@ -47,6 +47,17 @@ body {
   transition: 1.5s ease-in-out;
   transform-origin: 0;
 }
+#instruct3 {
+  z-index: -3;
+  background-color: #fbeaf2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: 1.5s ease-in-out;
+  transform-origin: 0;
+}
+
 
 .cake {
   width: 10rem;
@@ -170,9 +181,15 @@ footer{
   margin-bottom: 20px;
 }
 
+.header{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
 .step p{
   margin-bottom: 7px;
 }
+
 
 button {
   border: none;
@@ -217,6 +234,10 @@ button {
   border-radius: 20px;
   font-size: 20px;
   display: grid;
+}
+
+.step--only{
+  margin-top: 200px;
 }
 
 h2{
@@ -264,4 +285,8 @@ strong{
   z-index: -1;
   top: -65%;
   left: -50%;
+}
+.open-mouse{
+  width: 200px;
+  margin: 0 0 0 0;
 }
