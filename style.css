@@ -140,6 +140,7 @@ body {
 }
 
 .paper p{
+  line-height: 1.8;
   margin-bottom: 20px;
 }
 
@@ -192,7 +193,7 @@ footer{
 
 
 button {
-  border: none;
+ border: none;
   height: 48px;
   width: 48px;
   border-radius: 50%;
